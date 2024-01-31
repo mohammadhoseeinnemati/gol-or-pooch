@@ -1,17 +1,9 @@
 a = int(input("plz enter your 1 or 2 :"))
 
-
-for player1 in range(3):
-        if player1 == range(3):
-            break
-        elif player1 == "done":
-            break
-        
 if a == 1:
     print("rock ...")
     print("paper ...")
     print("scissors ...")
-
 
     import random 
 
@@ -31,6 +23,12 @@ if a == 1:
     player2 = computerMove
 
 
+    if a == 1:
+        for  player1 in range(3):
+            if player1 == range(3):
+                break
+
+
     if player1 == "rock" and player2 == "scissors":
          print ("player 1 wins !...")
     elif player1 == "rock" and player2 == "paper":
@@ -47,27 +45,24 @@ if a == 1:
         print ("thats a tie !...")
     else:
         print("something went wrong !...")
-
-
-        
+   
 if a == 2:
-    player1 = input("player1 , make your move :")
-    player2 = input("player2 , make your move :")
+    player_1 = input("player1 , make your move :")
+    player_2 = input("player2 , make your move :")
 
-
-    if player1 == "rock" and player2 == "scissors":
+    if player_1 == "rock" and player_2 == "scissors":
          print ("player 1 wins !...")
-    elif player1 == "rock" and player2 == "paper":
+    elif player_1 == "rock" and player_2 == "paper":
         print("player 2 wins !...")
-    elif player1 == "paper" and player2 == "rock":
+    elif player_1 == "paper" and player_2 == "rock":
         print("player 1 wins !...")
-    elif player1 == "paper" and player2 == "scissors":
+    elif player_1 == "paper" and player_2 == "scissors":
         print("player 2 wins !...")
-    elif player1 == "scissors" and player2 == "paper":
+    elif player_1 == "scissors" and player_2 == "paper":
         print("player1 wins !...")
-    elif player1 == "scissors" and player2 == "rock":
+    elif player_1 == "scissors" and player_2 == "rock":
         print("player2 wins !...")
-    elif player1 == player2:
+    elif player_1 == player_2:
         print ("thats a tie !...")
     else:
         print("something went wrong !...")
